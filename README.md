@@ -2,6 +2,8 @@
 
 ## Деплой ВМ в GCP
 
+В каталог `terraform` положить ключ `account.json`
+
 ```bash
 cd terraform
 cp terraform.tfvars.example terraform.tfvars
