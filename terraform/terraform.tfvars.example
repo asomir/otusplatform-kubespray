@@ -1,0 +1,3 @@
+project         = "otusplatform-kubespray"
+public_key_path = "~/kubespray.pub"
+disk_image      = "debian-9"

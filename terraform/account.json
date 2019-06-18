@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "otusplatform-kubespray",
+  "private_key_id": "e70c9203f0d27b046a42871a9d6fd8e6657e5270",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDFYTSMf7r3PkXc\n2R5yzf9v8mhawyIKYLeyLWtmrzv4H3Ck+yuA/fktuDoYodevWHXgAQ9/XCkRTMVI\nAgHnowFNnb4+LGeIiYQKZ+3D+plHvGuUmOhfIoVh/wdOr6YGkZzI2eo6hRAchN5E\nzdIaY/X7ArCBauSw8dLDeS080rxx7nNlDlZ7gas4OfZ9r5lGrc+GLIKIjCc+E+np\ni1lI/8ElQymLfVLWM0NND6IKXVu/kvpkj0JsvlQDskdw84W45jyCuVImEzjD1bSc\nwGJlvCXuYowffPESLdPzRDRHnhP62YMntGfA2XRRLnu9gZxBC/sqDWTgo/Mwg4Az\nsB0kOfbZAgMBAAECggEATuUv8AkOXs2Rd1mCBjm5JLIsbDsbXDKUuq/VAlKBEgjf\nKdML7J+X/mJpNndak0g0tbk2zJ21/KhHIyVKRaCuYKvw40E0kSsGkHJCY9fDdR0n\nk1obaAuQbT9XWGh1YKLLnK0eJw4RBpVFkxMCLHJQXGkSzGhByUigCmphXrKNiKwn\nxClooFvUQb+J1Rt1Bvd4Ns6YUWHoCYV5kM+X8MojZiYWsVE86Vhox890jBUdGQ7+\nCta6H/Q5AiRgQTCogbuhVNJAeLzyJOWrlmKTOTM0jLTFATbUBNDexNrDmcCni37L\n1h8AkVsS1EV8L3WCAlQaVjQQshch6VqA0sCnqYQ7EQKBgQDneDyRZeniMZtJrs8G\ncmgn86+3ZHA9HM6aPoQyDyXVRBDQQgMxZaNgFN+JW47b1/juzqrKAKXt4YYkHa81\nOxnmyhKBDNB8ejE6nBNfewd3pnr1zJwY9/7Uc0Q7B1UdmNGrXWlDibnpyBjHPNvK\nV7C0w1v7NCC/lMcN2d7XOUVwxwKBgQDaTBv0ca8xsXvjmxwMLgSJ63fCbJlhIBVR\nU5yMMQkj5Is7J4w1HaOvdlasuJAZvdBPlYh7e/Fgt0l4mqzdCRMEwvm2ww2zjXcg\npHsJ6oaTn1X/4uMjbpvyHUhnILyn7Y8Pwg6Qm7SC11b7FviZHY9gGYuLnzk+UHHh\ngqbqRQ77XwKBgQDHZ1N2Rn+n9ug6H7gFa8XCtTGpIYN3gjuRsU2c+mOzR8HcRyIN\nCewmt5Si9hcp2PKAd9W1070eIuy2bEQl7VYw9d/fALUSpwmF3jLqTEhwkSDYY34O\nHIaRawNafsSajK4DnKM0JY/dkB2Ydhs6QzTdZHb2/z8/C+I3UnugmZvyvQKBgQCU\n5Cx9Ab1Yy5GQoI70z75Qw8YfWisTT+q6WakBBcESNiOw6Tx8TgcC+lgL3qaKqCiY\n34kDkHoGWX1HQVh+Ol46dTIVMdz6hpamMQmqrce0kIz7xyjdVegPr2Fe1blXYHSf\nbuC4STtJss6k2/oblUnhZgsD5EoK8pt6EL8AMrIRSQKBgHuU5ODTghsEcxbq6zuW\nv9lXS2az+OgzYEwkYavCfvq3xCLtRRTuMgAjNX66TRy4UdXAVVoksAuKWogX9A6M\n7TB5QxyUZl6FI8IRZesvoRKjqaXjDnO7DNr0gVRpp+SZsklM9zroAOfp8Df1Si6d\n82z8InJ183wH9aOvKLISqdva\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform@otusplatform-kubespray.iam.gserviceaccount.com",
+  "client_id": "101188624380493624098",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40otusplatform-kubespray.iam.gserviceaccount.com"
+}
