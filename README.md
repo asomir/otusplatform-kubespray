@@ -8,7 +8,8 @@
 cd terraform
 cp terraform.tfvars.example terraform.tfvars
 # Прописать в terraform.tfvars свои параметры
-terrarom plan
+terraform init
+terraform plan
 terraform apply
 ```
 
