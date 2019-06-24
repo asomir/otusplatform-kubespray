@@ -8,14 +8,14 @@ provider "google" {
   region      = "${var.region}"
 }
 
-
-resource "google_compute_project_metadata_item" "user" {
-  key   = "ssh-keys"
-  value = "user:${file(var.public_key_path)}"
+resource "random_string" "random" {
+  length  = 5
+  special = false
+  upper   = false
 }
 
 resource "google_compute_instance" "master_instance" {
-  name         = "master-instance-${count.index}"
+  name         = "${random_string.random.result}-master-instance-${count.index}"
   machine_type = "n1-standard-1"
   zone         = "${var.zone}"
   count        = "${var.master_count}"
@@ -31,10 +31,14 @@ resource "google_compute_instance" "master_instance" {
 
     access_config {}
   }
+
+  metadata = {
+    ssh-keys = "user:${file(var.public_key_path)}"
+  }
 }
 
 resource "google_compute_instance" "worker_instance" {
-  name         = "worker-instance-${count.index}"
+  name         = "${random_string.random.result}-worker-instance-${count.index}"
   machine_type = "n1-standard-1"
   zone         = "${var.zone}"
   count        = "${var.worker_count}"
@@ -49,6 +53,10 @@ resource "google_compute_instance" "worker_instance" {
     network = "default"
 
     access_config {}
+  }
+
+  metadata = {
+    ssh-keys = "user:${file(var.public_key_path)}"
   }
 }
 

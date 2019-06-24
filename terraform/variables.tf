@@ -1,5 +1,6 @@
 variable project {
   description = "Project ID"
+  default     = "otusplatform-kubespray"
 }
 
 variable region {
@@ -18,6 +19,7 @@ variable public_key_path {
 
 variable disk_image {
   description = "Disk image"
+  default     = "debian-9"
 }
 
 variable "master_count" {
