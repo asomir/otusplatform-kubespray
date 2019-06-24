@@ -2,7 +2,7 @@
 
 ## Деплой ВМ в GCP
 
-Установить [https://nbering.github.io/terraform-provider-ansible/docs/installation.html](Terraform provider for Ansible) для подключения dynamic inventory в Ansible из Terraform (состоит из 2-х частей: провайдер для Terraform и скрипт dynamic inventory для Ansible).
+Установить [Terraform provider for Ansible](https://nbering.github.io/terraform-provider-ansible/docs/installation.html) для подключения dynamic inventory в Ansible из Terraform (состоит из 2-х частей: провайдер для Terraform и скрипт dynamic inventory для Ansible).
 
 В каталог `terraform` положить ключ `account.json`.
 
