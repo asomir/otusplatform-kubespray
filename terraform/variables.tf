@@ -19,3 +19,13 @@ variable public_key_path {
 variable disk_image {
   description = "Disk image"
 }
+
+variable "master_count" {
+  default     = 3
+  description = "Count master nodes"
+}
+
+variable "worker_count" {
+  default     = 2
+  description = "Count worker nodes"
+}

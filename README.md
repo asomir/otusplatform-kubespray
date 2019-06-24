@@ -2,7 +2,9 @@
 
 ## Деплой ВМ в GCP
 
-В каталог `terraform` положить ключ `account.json`
+Установить [https://nbering.github.io/terraform-provider-ansible/docs/installation.html](Terraform provider for Ansible) для подключения dynamic inventory в Ansible из Terraform (состоит из 2-х частей: провайдер для Terraform и скрипт dynamic inventory для Ansible).
+
+В каталог `terraform` положить ключ `account.json`.
 
 ```bash
 cd terraform
@@ -19,10 +21,11 @@ terraform apply
 
 В `kubespray/ansible.cfg` в блоке `defaults` установить параметр `private_key_file`
 
-В файле `kubespray/inventory/mycluster/inventory.ini` прописать адреса master- и worker-нод.
+Установить переменную окружения `ANSIBLE_TF_DIR`, указывающую путь к рабочей директории terraform.
 
 ```bash
 cd kubespray
+export ANSIBLE_TF_DIR=../terraform
 ansible-galaxy install  -c  -r ./requirements.yml # Лучше на всякий проверить версии перед установкой
-ansible-playbook -i inventory/mycluster/inventory.ini --become --become-user=root cluster.yml
+ansible-playbook -i /etc/ansible/terraform.py --become --become-user=root cluster.yml
 ```
