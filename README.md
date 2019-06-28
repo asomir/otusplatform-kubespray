@@ -34,5 +34,6 @@ terraform apply
 git clone https://github.com/kubernetes-sigs/kubespray.git
 cd kubespray
 export ANSIBLE_TF_DIR=../terraform
-ansible-playbook -i /etc/ansible/terraform.py --become --become-user=root --user=user --key-file=~/.ssh id_rsa_otusplatform_kubespray cluster.yml
+ansible-playbook -i /etc/ansible/terraform.py --become --become-user=root \
+--user=user --key-file=~/.ssh/id_rsa_otusplatform_kubespray cluster.yml
 ```
