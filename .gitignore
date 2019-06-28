@@ -2,3 +2,4 @@
 *.tfvars
 */account.json
 */.terraform
+/kubespray

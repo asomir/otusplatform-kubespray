@@ -26,15 +26,13 @@ terraform apply
 
 ## Деплой Kubernetes
 
-В `kubespray/ansible.cfg` в блоке `defaults` установить параметр `private_key_file`
-
 Установить переменную окружения `ANSIBLE_TF_DIR`, указывающую путь к рабочей директории terraform.
 
 Разворачивем k8s кластер:
 
 ```bash
+git clone https://github.com/kubernetes-sigs/kubespray.git
 cd kubespray
 export ANSIBLE_TF_DIR=../terraform
-ansible-galaxy install  -c  -r ./requirements.yml
-ansible-playbook -i /etc/ansible/terraform.py --become --become-user=root cluster.yml
+ansible-playbook -i /etc/ansible/terraform.py --become --become-user=root --user=user --key-file=~/.ssh id_rsa_otusplatform_kubespray cluster.yml
 ```
